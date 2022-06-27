@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details</title>
+    <!-- DataTable css -->
+    <link rel="stylesheet" href="//cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
+
+    <!-- Bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <style>
+        #id_number{
+            color: black;
+            background-color: #fff;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <h3>Welcome to Student Hub...</h3>
+    <input type="number" name="Student_Number" id="id_number">
+    <button type="submit" onclick="FetchData(document.getElementById('id_number').value)">Find Student Details</button>
+    <br>
+    <br>
+
+
+    <div class="my-4">
+        <table class="table" id="myTable">
+            <thead>
+                <tr>
+                    <th scope="col">Roll No.</th>
+                    <th scope="col">First Name</th>
+                    <th scope="col">Last Name</th>
+                    <th scope="col">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+    </div>
+</body>
+
+<script>
+    function FetchData(sid){
+        document.querySelector('.table').
+        var sql = "select * from student_information where id='sid'";
+        
+    }
+</script>
+</html>
